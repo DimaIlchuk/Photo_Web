@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingEnd="10dp"
+    android:paddingBottom="20dp"
+    android:paddingStart="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/validate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/summary_validate_button"
+            android:gravity="center"
+            android:text="@string/MYCARD_PAID"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="11dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/summary_prints_header"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/COMMAND"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/command_total_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="20dp"
+                            android:gravity="center_vertical"
+                            android:text="10.40€"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/recap_command_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/summary_listview_shape"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp">
+
+
+                        <TextView
+                            android:id="@+id/recap_command_infos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="1 livre"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/fleche_rubrique" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="11dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/prints_header_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/summary_prints_header"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/SHIPMENT"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/delivery_total_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="20dp"
+                            android:gravity="center_vertical"
+                            android:text="2.50€"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/summary_listview_shape"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/recap_delivery_method"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="10dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/DELIVERYSERVICE"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/fleche_rubrique" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E9E9E9" />
+
+                        <LinearLayout
+                            android:id="@+id/recap_delivery_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="10dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/delivery_address_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/DELIVERY_ADDRESS"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/fleche_rubrique" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:id="@+id/delivery_address_infos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/delivery_address_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="John Doe"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="14sp" />
+
+
+                                <TextView
+                                    android:id="@+id/delivery_address_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="17 rue des Jeuneurs"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="14sp" />
+
+
+                                <TextView
+                                    android:id="@+id/delivery_address_postal_code"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="75002 Paris"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/delivery_address_country"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="FRANCE"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E9E9E9" />
+
+
+                        <LinearLayout
+                            android:id="@+id/recap_billing_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="10dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/billing_address_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/SAME_ADDRESS"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp" />
+
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/fleche_rubrique" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:id="@+id/billing_address_infos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/billing_address_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="John Doe"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="14sp" />
+
+
+                                <TextView
+                                    android:id="@+id/billing_address_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="17 rue des Jeuneurs"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="14sp" />
+
+
+                                <TextView
+                                    android:id="@+id/billing_address_postal_code"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="75002 Paris"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/billing_address_country"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="FRANCE"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="11dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/summary_prints_header"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/payment_methods"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <com.photoweb.piiics.utils.ResizableRecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="11dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp">
+
+
+                    <TextView
+                        android:id="@+id/promo_code_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="7dp"
+                        android:gravity="center"
+                        android:text="@string/PROMOCODE"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/promo_code_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/promo_code_title"
+                        android:layout_below="@id/promo_code_title"
+                        android:layout_marginEnd="40dp"
+                        android:backgroundTint="@android:color/darker_gray"
+                        android:inputType="text"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/promocode_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:layout_alignBottom="@id/promo_code_edittext"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/validation_green"
+                        android:textColor="@color/piics_white"
+                        android:text="@string/OK"/>
+
+                    <TextView
+                        android:id="@+id/reductionTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_alignStart="@id/promo_code_edittext"
+                        android:layout_below="@id/promo_code_edittext"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

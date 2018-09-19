@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BasketFragments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/DELIVERY_ADDRESS"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/geo_autocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fragment_delivery_edittext_background"
+        android:dropDownWidth="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:imeOptions="flagNoExtractUi|actionSearch"
+        android:inputType="textCapSentences"
+        android:paddingStart="20dp"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_above="@+id/poweredByGoogle">
+        </ListView>
+
+        <ImageView
+            android:id="@id/poweredByGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/powered_by_google_light"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

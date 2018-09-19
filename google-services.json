@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "357091183647",
+    "firebase_url": "https://fir-piiics.firebaseio.com",
+    "project_id": "firebase-piiics",
+    "storage_bucket": "firebase-piiics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357091183647:android:8c95aeae043a6f77",
+        "android_client_info": {
+          "package_name": "com.photoweb.piiics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357091183647-kebqgnuavan8pgfrjt0v0crjgcpurq4m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.photoweb.piiics",
+            "certificate_hash": "cd1a0ea91569423b0ff274988ca7290e1fe7c853"
+          }
+        },
+        {
+          "client_id": "357091183647-igge4celihh85g28i086k20l989lmli6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.photoweb.piiics",
+            "certificate_hash": "abb80245436296ea3d949a0702188eac10006f85"
+          }
+        },
+        {
+          "client_id": "357091183647-jtfb7si7r7pr1ba7n58v7q05olj28rs3.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "357091183647-on5asbgkrksmhjlkoes7qbmn6v9dmmru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.photoweb.piiics",
+            "certificate_hash": "72a35fa54292dd4aa0a4fe5e629474b24e7e2410"
+          }
+        },
+        {
+          "client_id": "357091183647-j9pch8oll0ham9og90ev0sub1dndpjb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1MTwTq-Na6Lul2WUrj9o_Wake0E4aaNM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357091183647-udbmtmnjaunbdp63u4189vjkoqc2frgf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appndigital.piiics"
+              }
+            },
+            {
+              "client_id": "357091183647-jtfb7si7r7pr1ba7n58v7q05olj28rs3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,128 @@
+<html>
+
+	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+      <meta charset="utf-8" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>  
+          
+        <!-- Appel de la librairie Google Maps : c'est une librairie d'implémentation de cartographies -->  
+        <!-- Cette librairie est obligatoire car elle est utilisée par le widget Mondial Relay -->  
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>  
+          
+        <!-- Appel de la librairie Widget Mondial Relay : c'est la librairie permettant la sélection de Point Relais -->  
+        <script type="text/javascript" src="https://widget.mondialrelay.com/parcelshop-picker/v3_0/scripts/jquery.plugin.mondialrelay.parcelshoppicker.js"></script>
+
+        <script>
+		function validateForm() {
+    		var x = document.forms["relay"]["id"].value;
+    		if (x == "") {
+        		alert("Merci de sélectionner un point relay");
+        		return false;
+    		}
+		}
+		</script> 
+          		
+        <!-- Début d'un script -->  
+        <script type="text/javascript">  
+		  
+		  
+            		// Avec jQuery, exécute le script entre accolades uniquement après le chargement complet de la page  
+            $(document).ready(function () {  
+  
+                // Charge le widget dans la DIV d'id "Zone_Widget" avec les paramètres indiqués  
+                $("#Zone_Widget").MR_ParcelShopPicker({  
+                    Target: "#Target_Widget"                                // Selecteur JQuery de l'élément dans lequel sera 
+
+                    , Brand: "F1PIIICS"   ,
+                      Country: "FR"                                   // Le code client Mondial Relay  
+                                                                            // Lorsqu'il est indiqué "BDTEST  ", un message d'avertissement apprait pour avertir que ce sont les paramètres de test qui sont utilisés      
+                      
+                });  
+  
+            });  
+        </script>
+        <style>
+            .MR-Widget, .MR-Widget.fr-FR{
+                width: 100%;
+            }
+            #MRW-Map{
+                display: none;
+            }
+
+            .MRW-RList{
+                width: 100% !important;
+            }
+            
+            .form_final{
+                position: fixed;
+                bottom: 0px;
+                right: 10px;
+
+            }
+
+            .MR-Widget div.MRW-Search {
+                padding: 19px 10px 0px 10px;
+                background-position: 99% 1%;
+                background-size: 5%;
+            }
+
+            .MR-Widget div.MRW-Results{
+                height: auto;
+            }
+
+            .float_button, .MRW-BtGo, .MRW-BtGeoGo{
+                background-color:#689f38 !important;
+                font-size: 15px;
+                color: #fff;
+                padding: 15px;
+                border: none; 
+                border-radius: 5px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+            }
+
+            .MRW-BtGo, .MRW-BtGeoGo{
+                box-shadow: none;
+                width: 100%;
+            }
+
+            .MRW-BtGeoGo{
+                background-color: #00796b !important;
+                padding: 10px;
+                display: none;
+            }
+
+            .MRW-Line input{
+                height: 30px;
+                /* display: block; */
+                margin-bottom: 10px;
+            }
+
+            .MRW-Line{
+                font-size: 15px;
+                text-align: left;
+            }
+
+        </style>
+	</head>
+
+	<body>  
+    <!-- C'est dans cette zone que le Widget sera chargé -->  
+    	<div id="Zone_Widget"></div>
+
+    	<div style="display:inline-block; vertical-align:top;">
+   
+  
+                <!-- La balise ayant pour Id "Target_Widget" a été paramétrée pour reçevoir l'ID du Point Relais sélectionné -->
+                <form name="relay" class="form_final" action="result.html" onsubmit="return validateForm()" method="get">
+
+                 <input type="hidden" name="id" id="Target_Widget" /><br>
+
+                 <button class="float_button" type="submit" value="Submit" > Valider </button>
+  
+                </form>
+  
+            </div>  
+    
+	</body>
+
+</html>

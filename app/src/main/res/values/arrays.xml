@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string-array name="piiicsColors">
+        <item>@color/piics_black</item>
+        <item>@color/piics_dark_blue</item>
+        <item>@color/piics_dark_brown</item>
+        <item>@color/piics_light_brown</item>
+        <item>@color/piics_light_pink</item>
+        <item>@color/piics_dark_red</item>
+        <item>@color/piics_green</item>
+        <item>@color/piics_light_blue</item>
+        <item>@color/piics_pink</item>
+        <item>@color/piics_purple</item>
+        <item>@color/piics_salmon</item>
+        <item>@color/piics_white</item>
+        <item>@color/piics_yellow</item>
+    </string-array>
+</resources>

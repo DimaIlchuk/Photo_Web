@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="5">
+
+        <ImageView
+            android:id="@+id/pic_selected_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#555555">
+
+        <TextView
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/CANCEL"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="@string/VALIDATE"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#f7f7f7"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:elevation="20dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_default"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:tag="10" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_sepia"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:tag="11" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_contrast"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:tag="12" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_invert"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:tag="13" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_hue"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:tag="14" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_grayscale"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:tag="15" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_sobel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:tag="16" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_emboss"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:tag="17" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_mono"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:tag="18" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/filter_vignette"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:tag="19" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

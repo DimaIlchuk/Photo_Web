@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_fragment_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/CONNECTION"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/mail_fragment_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_fragment_sign_in"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:hint="@string/ADDRESSEMAIL"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/password_fragment_sin_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail_fragment_sign_in"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/PASSWORD"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColorHint="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/connect_button_fragment_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_fragment_sin_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_shape_button_signup"
+        android:text="@string/CONNECTION"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/password_lost_fragment_sin_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/FORGOT_PASSWORD"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+</RelativeLayout>

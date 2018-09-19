@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#e21246</color>
+    <color name="colorAccent">#e21246</color>
+
+
+    <color name="stickersGridView">#ddaaaaaa</color>
+
+
+    <color name="piics_black">#000000</color>
+    <color name="piics_dark_blue">#21386A</color>
+    <color name="piics_dark_brown">#5a493f</color>
+    <color name="piics_light_brown">#cebca6</color>
+    <color name="piics_light_pink">#ffdce8</color>
+    <color name="piics_dark_red">#9D0D16</color>
+    <color name="piics_green">#99cc67</color>
+    <color name="piics_light_blue">#5269AD</color>
+    <color name="piics_pink">#ed316b</color>
+    <color name="piics_purple">#55476b</color>
+    <color name="piics_salmon">#e8575a</color>
+    <color name="piics_white">#fffffe</color>
+    <color name="piics_yellow">#fce170</color>
+
+    <color name="facebook_connector">#3B5998</color>
+    <color name="google_connector">#E6E6E6</color>
+    <color name="instagram_connector">#CA4678</color>
+    <color name="dropbox_connector">#147EE5</color>
+
+    <color name="fragment_background_grey">#F7F7F7</color>
+
+    <color name="validation_green">#23CAC1</color>
+
+    <color name="tab_background_selected">@color/validation_green</color>
+    <color name="tab_background_unselected">@color/fragment_background_grey</color>
+
+</resources>

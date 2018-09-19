@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.photoweb.piiics.utils.SquareLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/firstpage"
+            android:layout_above="@id/tool_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="1dp"
+            android:paddingEnd="1dp"
+            android:background="#FFF"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_above="@id/tool_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="1dp"
+            android:paddingEnd="1dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/tool_book"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/item_book_shadow">
+
+            <TextView
+                android:id="@+id/pageNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="Page 1"
+                android:textSize="12sp"
+                android:textColor="#999999"/>
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/poubelle_gris" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</com.photoweb.piiics.utils.SquareLinearLayout>

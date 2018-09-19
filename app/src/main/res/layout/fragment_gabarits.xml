@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="5">
+
+        <ImageView
+            android:id="@+id/pic_selected_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/pic_selected_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true" />
+
+        <GridView
+            android:id="@+id/gabarits_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/stickersGridView"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:isScrollContainer="false"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#555555">
+
+        <TextView
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/CANCEL"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="@string/VALIDATE"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/print_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#f7f7f7"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/menu_icons"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:elevation="20dp"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/album_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:visibility="gone"
+        android:orientation="horizontal"/>
+
+</LinearLayout>

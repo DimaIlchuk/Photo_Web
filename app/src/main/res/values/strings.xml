@@ -1,0 +1,261 @@
+<resources>
+    <string name="app_name" translatable="false">Piiics</string>
+    <string name="facebook_app_id" translatable="false">1408488732543155</string>
+    <string name="app_key" translatable="false">kct1uapz7ngmtz1</string>
+    <string name="acc_partner_id" translatable="false">photowebcb4b77a89ebac2a</string>
+    <string name="acc_private_key" translatable="false">56ece74305bb309b627368d12332b7f8b9973dd0</string>
+
+    <string name="firstTimeTutorialIsRead" translatable="false">firstTimeTutorialIsRead</string>
+    <string name="LANG">en</string>
+
+
+    <!-- Mandatory to fix an internal bug of 3.6.0 SDK -->
+    <string name="acc_unsecure_push" translatable="false">false</string>
+
+    <string name="acc_logging" translatable="false">false</string>
+    <string name="acc_no_geoloc" translatable="false">true</string>
+
+    <string name="acc_sender_id" translatable="false">fcm:357091183647</string>
+    <string name="acc_notification_icon" translatable="false">icon_notif</string>
+    <string name="acc_notification_accent_color" translatable="false">#e21246</string>
+
+    <string name="test_open" translatable="false">test open</string>
+    <string name="test_close" translatable="false">test close</string>
+
+    <!-- MyAccount : tabLayout views titles -->
+    <string name="layoutCommand">Orders</string>
+    <string name="layoutPersonnalInformations">Personnal info</string>
+    <string name="layoutSettings">Settings</string>
+    <string name="OPTIONS">Options</string>
+    <string name="BASKET">Basket</string>
+    <string name="DOWNLOAD_PROGRESS">%d photos are uploading in high quality, please wait</string>
+    <string name="ATTENTION">Warning !</string>
+    <string name="LEAVE">You\'re about to exit editor. Are you sure ?</string>
+    <string name="ERROR">Error</string>
+    <string name="GENERAL_ERROR">An error has occured.</string>
+    <string name="EDITOR">Editor</string>
+    <string name="INFOS">Informations</string>
+    <string name="EMAIL_WARNING">Don\'t write below this line !</string>
+    <string name="EMAIL_PHONE">Phone</string>
+    <string name="EMAIL_NUMBER">Client n°</string>
+    <string name="EMAIL_TITLE">Service desk</string>
+    <string name="CONNECT">Login with %s</string>
+    <string name="GOOGLEDRIVE">To access you photos, you now have to activate the option in your Google account. It will just take you a few seconds with this link :  https://support.google.com/drive/answer/6156103</string>
+    <string name="GO">Go to the website</string>
+    <string name="CANCEL">Cancel</string>
+    <string name="ATLEAST_1">Please select at least one photo to continue.</string>
+    <string name="ATLEAST_20">Please select at least 20 photos to continue.</string>
+    <string name="ABOVE_FREEPRINT">Beyond your free prints every month, the price of a classic format print is %s €</string>
+    <string name="UNDERSTAND">Ok, got it</string>
+    <string name="GUARD">Cover sheet</string>
+    <string name="PAGE_NB">Page</string>
+    <string name="FORBIDDEN_DELETE_BODY">A book cannot have less than 20 pages.</string>
+    <string name="FORBIDDEN_DELETE_TITLE">Deletion impossible</string>
+    <string name="PAGE_DELETE_TITLE">Delete</string>
+    <string name="PAGE_DELETE_BODY">Do you really want to delete this page ?</string>
+    <string name="YES">Yes</string>
+    <string name="CMD_NB">Order N°</string>
+    <string name="NO">No</string>
+    <string name="DELETE_CREATION">Do you really want to delete this creation ? ?</string>
+    <string name="PRINT">Prints</string>
+    <string name="SINGLE_PRINT">Print</string>
+    <string name="ALBUM">Photo books</string>
+    <string name="SINGLE_ALBUM">Photo boos</string>
+    <string name="CONNECTED">Connected</string>
+    <string name="NOT_CONNECTED">Disconnected</string>
+    <string name="FREE">Free</string>
+    <string name="SPONSOR_SHARE_TEXT">Download Piiics app with my sponsorship code %s</string>
+    <string name="DELIVERY_ADDRESS">Shipping address</string>
+    <string name="BILLING_ADDRESS">Billing address</string>
+    <string name="ALL_FIELDS_ERROR">Please fill all fields.</string>
+    <string name="SAME_ADDRESS">Use same address for billing</string>
+    <string name="DELIVERY_CODE">shipping is free !</string>
+    <string name="DISCOUNT_CODE">You get a discount of </string>
+    <string name="FREE_CODE">order is 100% free !</string>
+    <string name="DISCOUNT">Discount</string>
+    <string name="CONGRATS">Congratulations !</string>
+    <string name="THANKS_CODE">Thanks to this code,</string>
+    <string name="PRINT_CODE">you get %d extra prints !</string>
+    <string name="CGU_PAGE">https://www.piiics.com/de/cgu-intl/</string>
+    <string name="CGU">CGU</string>
+    <string name="FAQ">FAQ</string>
+    <string name="PROFILE">My account</string>
+    <string name="CREATION">My creations</string>
+    <string name="BACK">Back</string>
+    <string name="EDIT">Edit</string>
+    <string name="SPONSOR">Sponsorship</string>
+    <string name="MARGIN">Margins</string>
+    <string name="FORMATS">Formats</string>
+    <string name="IMAGE">Image</string>
+    <string name="PHOTO_DELETE">Do you really want to delete this photo ?</string>
+    <string name="ALBUM_PAGE_DESCRIBE"><![CDATA[Receive a 20 pages photo book <b>FOR FREE</b> every month !! You just have to pay for mailing fees.]]></string>
+    <string name="BACKGROUND">Backgrounds</string>
+    <string name="COVER">Front-cover</string>
+    <string name="BACK_COVER">Back-cover</string>
+    <string name="FILTER">Filters</string>
+    <string name="GABARIT">Layouts</string>
+    <string name="ONE_LEFT">%d %s remainig</string>
+    <string name="LEFT">%d %s remaining</string>
+    <string name="HOME_POPUP"><![CDATA[Receive every month FOR FREE <b>1 photobook ou 50 prints</b>.<br><br>You just have to pay for mailing fees.<br><br>With Piiics is subscription free, commitment free and... gluten free ;)]]></string>
+    <string name="LAST_CREATION">Do you want to continue working on your latest creation?</string>
+    <string name="NEW_CREATION">New creation</string>
+    <string name="PRINT_PAGE_DESCRIBE"><![CDATA[Receive 50 prints <b>FOR FREE</b> eveyr month  !! You just have to pay for mailing fees.]]></string>
+    <string name="NON_VALID">Invalid email addess.</string>
+    <string name="PWB_BODY">Please enter your email address</string>
+    <string name="VALIDATE">Continue</string>
+    <string name="PWD_CONFIRM">An email has been sent to you.</string>
+    <string name="ADD_TEXT">New text</string>
+    <string name="ADD_ACTION">Add</string>
+    <string name="ACCESS_ACCOUNT">Access my account</string>
+    <string name="HOME">Home</string>
+    <string name="HOWTO">How does it work ?</string>
+    <string name="CONTACT">Contact</string>
+    <string name="OPTION_TITLE_1">Switch to the hard cover !</string>
+    <string name="OPTION_DESC_1">The PRO option that will give your book an ultra-quality look !</string>
+    <string name="OPTION_BUY_1">Choose the hard cover</string>
+    <string name="OPTION_NOT_BUY_1">I prefer the soft cover</string>
+    <string name="REMOVELOGO">Remove logo</string>
+    <string name="PRODUCT_QUANTITY">Product quantity</string>
+    <string name="ADDITIONAL_BOOK">additionnal photo book (without options)</string>
+    <string name="CONTINUE">Continue</string>
+    <string name="OPTION_TITLE_3">Choose a matte-look cover!</string>
+    <string name="OPTION_DESC_3">The unmissable option which gives your album a modern style!</string>
+    <string name="OPTION_BUY_3">Choose a matte-look cover</string>
+    <string name="OPTION_NOT_BUY_3">I prefer a classic cover</string>
+    <string name="OPTION_TITLE_2">Add gloss to your pages!</string>
+    <string name="OPTION_DESC_2">The must-have WOW option which gives your pages a brilliant shine!</string>
+    <string name="OPTION_BUY_2">Add gloss to my pages</string>
+    <string name="OPTION_NOT_BUY_2">I prefer unglossed pages</string>
+    <string name="PHOTO_BOOK">Photo book</string>
+    <string name="PHOTO_BOOK_DESC">Receive a 20 pages photo book FOR FREE every month !! You just have to pay for mailing fees.</string>
+    <string name="BASELINE">#subscriptionfree #commitmentfree #glutenfree</string>
+    <string name="BOOK">Photo book</string>
+    <string name="SIZE">Size :</string>
+    <string name="MAX_PAGE">20 to 80</string>
+    <string name="SOFT"> </string>
+    <string name="PAGES">pages</string>
+    <string name="ADDITIONAL_PAGE_DESC">0,29€ per extra page after the 21st page</string>
+    <string name="SHIPMENT">Delivery</string>
+    <string name="SHIPMENT_DESC">Piiics delivers you at home wherever you are between 5 and 11 days. No need to pick up prints on the other side of the world ;)</string>
+    <string name="SHIPMENT_BOOK_COST">Mailing fees start at 6,99€ !</string>
+    <string name="CUSTOMISATION">Customization</string>
+    <string name="STICKERS">Stickers</string>
+    <string name="TEXT">Text</string>
+    <string name="SELECT_PHOTOS">Select my pictures</string>
+    <string name="SOFTCOVER">Softcover</string>
+    <string name="CONFIRM_BUY">Congratulations!\nYour order has been accepted.</string>
+    <string name="SPONSOR_OFFER">Get up to 15 extra prints by sponsoring your friends :</string>
+    <string name="SHARE_SPONSOR">Share my sponsor code</string>
+    <string name="SEE_YOU">See you next month !</string>
+    <string name="STANDARD_SOLO">Standard</string>
+    <string name="SQUARE_SIZE">Square 10x10cm</string>
+    <string name="PANO_SIZE">Pano 10x18cm</string>
+    <string name="MR">Mr</string>
+    <string name="MS">Mrs</string>
+    <string name="LASTNAME">Lastname</string>
+    <string name="FIRSTNAME">Firstname</string>
+    <string name="ADDRESS">Address</string>
+    <string name="COMPLEMENT_ADDRESS">Addition to address</string>
+    <string name="ZIPCODE">Zip code</string>
+    <string name="CITY">City</string>
+    <string name="COUNTRY">Country</string>
+    <string name="SHIPMENT_COST">Mailing fees :</string>
+    <string name="DOUBLE">Duplicate</string>
+    <string name="ADDRESSEMAIL">Email address</string>
+    <string name="GIVE_EMAIL">Please enter your email address.</string>
+    <string name="LETS_GO">Let\'s go !</string>
+    <string name="CONNECT_ME">Login</string>
+    <string name="LATER">Later</string>
+    <string name="PHOTO_PRINT">Photo prints</string>
+    <string name="WELCOME">Welcome to Piiics</string>
+    <string name="CONNECT_FB">Login with Facebook</string>
+    <string name="CONNECT_GOOGLE">Login with Google</string>
+    <string name="CONNECT_INSTA">Login with Instagram</string>
+    <string name="SIGNUP">Create an account</string>
+    <string name="CONDITION_ACCEPT">By signing up, I accept the general terms of sales</string>
+    <string name="CONNECTION">Login</string>
+    <string name="CROP">Crop</string>
+    <string name="OPTIN">Receive offers from partners</string>
+    <string name="LINKED_ACCOUNT">Linked accounts</string>
+    <string name="TOTAL">Total</string>
+    <string name="MYCARD_PAID">Pay with my card</string>
+    <string name="CHANGE_CARD">Change payment method</string>
+    <string name="OK">OK</string>
+    <string name="COMMAND">Order</string>
+    <string name="DELIVERYSERVICE">Moyen de livraison</string>
+    <string name="PROMOCODE">Promocode</string>
+    <string name="SQUARE_SOLO">Square</string>
+    <string name="PANO_SOLO">Panoramic</string>
+    <string name="PHOTO_PRINT_DESC">Receive 50 prints FOR FREE every month !! You just have to pay for mailing fees.</string>
+    <string name="STANDARD_PRICE">0,19€ after 50</string>
+    <string name="SHIPMENT_PRINT_COST">Mailing fees start at 3,99€ !</string>
+    <string name="PASSWORD">Password</string>
+    <string name="FORGOT_PASSWORD">Forgotten password ?</string>
+    <string name="SPONSOR_PRESENT">Here is your sponsorship code!</string>
+    <string name="SPONSOR_DESCRIBE">Share it with your friends and receive five additional prints once their orders have been confirmed. </string>
+    <string name="FONT">Fonts</string>
+    <string name="COLORS">Colors</string>
+    <string name="SENDING_PHOTOS">Sending your photos to our printing office. Please wait a few moments 😊</string>
+    <string name="UPLOAD_CONNECT">To make it faster, please make sure you have a good internet connexion!</string>
+    <string name="UPLOAD_OVER">Upload is finished !</string>
+    <string name="SELECT_TITLE">Select photos</string>
+    <string name="CAT_STANDARD">Standard format</string>
+    <string name="CAT_SQUARE">Square format</string>
+    <string name="CAT_PANO">Panoramic format</string>
+    <string name="PRESTIGE">Hardcover</string>
+    <string name="CAT_VARNISHED">Varnished pages</string>
+    <string name="CAT_MATE">Matte cover</string>
+    <string name="CAT_ADDITIONAL">Additional photo books</string>
+    <string name="ESTIMATION">Delivery planned between %s and %s</string>
+    <string name="PROBLEM">Something wrong ? <u>Contact-us</u></string>
+    <string name="VISIBLE_BACK">Backgrounds are visibile only by adding a layout.</string>
+    <string name="INVALID_POSTCODE">Invalid zipcode</string>
+    <string name="INVALID_CODE">Invalid promocode</string>
+    <string name="CODE_LANG">en_EN</string>
+    <string name="FRANCE">France</string>
+    <string name="GERMANY">Germany</string>
+    <string name="DELIVERY_STANARD">Standard Delivery</string>
+    <string name="DELIVERY_EXPRESS">Express Delivery</string>
+    <string name="DELIVERY_MR">Mondial Relais</string>
+    <string name="DELIVERY_STANDARD_DESC">Home delivery</string>
+    <string name="DELIVERY_EXPRESS_DESC">Express tracked delivery</string>
+    <string name="DELIVERY_MR_DESC">Delivery at point relais</string>
+    <string name="PENDING">Printing</string>
+    <string name="SENT">Shipped</string>
+    <string name="FOLLOW">Follow my package</string>
+    <string name="SPAIN">Spain</string>
+    <string name="ITALY">Italy</string>
+    <string name="NETHERLANDS">Netherlands</string>
+    <string name="AUSTRIA">Austria</string>
+    <string name="BELGIUM">Belgium</string>
+    <string name="BULGARIA">Bulgaria</string>
+    <string name="CYPRUS">Cyprus</string>
+    <string name="CROATIA">Croatia</string>
+    <string name="DENMARK">Denmark</string>
+    <string name="ESTONIA">Estonia</string>
+    <string name="FINLAND">Finland</string>
+    <string name="GREECE">Greece</string>
+    <string name="HUNGARY">Hungary</string>
+    <string name="IRLAND">Irland</string>
+    <string name="LATVIA">Latvia</string>
+    <string name="LITHUANIA">Lithuania</string>
+    <string name="LUXEMBOURG">Luxembourg</string>
+    <string name="MALTA">Malta</string>
+    <string name="POLAND">Poland</string>
+    <string name="PORTUGAL">Portugal</string>
+    <string name="CZECH">Czech republic</string>
+    <string name="ROMANIA">Romania</string>
+    <string name="BRITAIN">Britain</string>
+    <string name="SLOVAKIA">Slovakia</string>
+    <string name="SLOVENIA">Slovenia</string>
+    <string name="SWEDEN">Sweden</string>
+    <string name="SWISS">Swiss</string>
+    <string name="NORWAY">Norway</string>
+    <string name="UNIT">Unit :</string>
+    <string name="PAYPAL">Pay with PayPal</string>
+    <string name="payment_methods">Payment method</string>
+    <string name="SELECT_CARD">Select your credit card</string>
+    <string name="USE_CARD">"Use your card "</string>
+    <string name="PAY_PAYPAL">Pay with PayPal</string>
+
+</resources>

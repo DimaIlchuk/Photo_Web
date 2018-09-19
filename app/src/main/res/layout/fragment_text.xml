@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customAttrs="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="5">
+
+        <ImageView
+            android:id="@+id/pic_selected_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"/>
+
+        <com.xiaopo.flying.sticker.StickerView
+            android:id="@+id/sticker_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:bringToFrontCurrentSticker="true"
+            app:showIcons="true">
+            <!-- custom, maybe you will like to put an ImageView-->
+
+            <ImageView
+                android:id="@+id/pic_selected_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_instagram_cercle" />
+
+        </com.xiaopo.flying.sticker.StickerView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#555555">
+
+        <TextView
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/CANCEL"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="@string/VALIDATE"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <LinearLayout
+            android:id="@+id/utils_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/delete_all_layout"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/delete_all_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/poubelle_gris"
+                    android:tag="10" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PAGE_DELETE_TITLE"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/add_text_layout"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/add_text_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/plus_blanc"
+                    android:tag="10" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ADD_ACTION"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/add_font_layout"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/add_font_title"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/plus_blanc"
+                    android:tag="10"
+                    android:text="Aa"
+                    android:textColor="@color/piics_black"
+                    android:gravity="center"
+                    android:textSize="36dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FONT"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/add_color_layout"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/add_color_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/border_color_light_blue"
+                    android:tag="10" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/COLORS"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/custom_font_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="20dp"
+            android:background="#f7f7f7"
+            android:orientation="horizontal"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</LinearLayout>

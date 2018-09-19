@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/indicator"/>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@id/indicator"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Piiics a besoin d'internet pour afficher le tutoriel.\nVous êtes bien connecté ?"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

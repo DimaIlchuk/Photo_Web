@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_slider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5">
+
+        <TextView
+            android:id="@+id/duplicate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/DOUBLE"
+            android:textColor="#000000"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="0.00 €"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/viewPagePics"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_weight="5"
+        android:background="#F5F5F5"
+        android:padding="5dp"
+        android:src="@drawable/photo1" />
+
+    <LinearLayout
+        android:id="@+id/navigate_pics_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="#F5F5F5">
+
+        <ImageView
+            android:id="@+id/previous_pic_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="20dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/precedent" />
+
+        <TextView
+            android:id="@+id/pics_counter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="2/42" />
+
+        <ImageView
+            android:id="@+id/next_pic_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="20dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/suivant" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:background="#F5F5F5"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/backgroundLL"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/background_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/fonds_blanc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/BACKGROUND" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/stickersLL"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/smiley_blanc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/STICKERS" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textLL"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/texte_blanc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/TEXT" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gabaritsLL"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gabarits_blanc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/GABARIT" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

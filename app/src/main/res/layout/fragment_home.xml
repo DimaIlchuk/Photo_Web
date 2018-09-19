@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/fond_triangle">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <ImageView
+                android:id="@+id/photo_prints_background_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo_home_01_bis" />
+
+            <TextView
+                android:id="@+id/photo_prints_fragment_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_title_category_background"
+                android:paddingBottom="5dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/PHOTO_PRINT"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_marginTopPercent="35%" />
+
+            <TextView
+                android:id="@+id/tv_free_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photo_prints_fragment_home"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_free_items_category_background"
+                android:paddingBottom="5dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:text="50 gratuits"
+                android:textColor="#aa000000"
+                android:textSize="20sp" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:alpha="1.0">
+
+            <ImageView
+                android:id="@+id/photo_book_background_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo_home_02" />
+
+            <TextView
+                android:id="@+id/photo_book_fragment_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_title_category_background"
+                android:paddingBottom="5dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/PHOTO_BOOK"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_marginTopPercent="35%"/>
+
+            <TextView
+                android:id="@+id/tv_free_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photo_book_fragment_home"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_free_items_category_background"
+                android:paddingBottom="5dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:text="Bientôt disponible"
+                android:textColor="#aa000000"
+                android:textSize="20sp" />
+        </android.support.percent.PercentRelativeLayout>
+        <TextView
+            android:id="@+id/bottomButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/home_title_category_background"
+            android:paddingBottom="5dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:text="@string/BASELINE"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp"
+            android:drawableRight="@drawable/layout_home_infos"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6D666666"
+        android:padding="25dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/home_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:gravity="center"
+            android:background="@drawable/home_popup_background">
+
+            <TextView
+                android:id="@+id/text_popup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/validate"
+                android:layout_below="@+id/text_popup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/summary_validate_button"
+                android:gravity="center"
+                android:text="@string/UNDERSTAND"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/home_popup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-50dp"
+            android:src="@drawable/cercle_logo"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

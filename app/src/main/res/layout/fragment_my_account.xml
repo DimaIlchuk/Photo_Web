@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Paul"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/freePrints"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="50 tirages restants"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/freeAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="1 album restant"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/validation_green"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/black"
+        app:tabBackground="@drawable/tab_color_selector"
+        app:tabTextAppearance="@style/MyAccountTabTextAppearance"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

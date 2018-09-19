@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F5F5">
+
+    <RelativeLayout
+        android:id="@+id/imageViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/option_no_logo_background"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/option_no_logo_background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/option_pas_de_logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/delLogoLayout"
+        android:layout_below="@id/imageViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/white_rounded_box_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/delLogoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:text="@string/REMOVELOGO"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/logoPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/delLogoTV"
+            android:layout_toStartOf="@+id/checkbox"
+            android:gravity="center_vertical"
+            android:text="(1.99€)"
+            android:textColor="@android:color/black" />
+
+        <CheckBox
+            android:id="@id/checkbox"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:theme="@style/MyCheckBox2"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/delLogoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_rounded_box_background"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PRODUCT_QUANTITY"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/quantityPositive"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/plus_blanc"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/quantityNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/quantityPositive"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"/>
+
+
+            <ImageView
+                android:id="@+id/quantityNegative"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/moins_blanc"
+                android:layout_toStartOf="@id/quantityNumber"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/additionalBookPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="9.99€"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/ADDITIONAL_BOOK"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/validate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/summary_validate_button_light"
+        android:gravity="center"
+        android:text="@string/CONTINUE"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

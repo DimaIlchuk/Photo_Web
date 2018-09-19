@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetStart="0dp"
+    app:contentInsetEnd="0dp"
+    android:background="@color/colorAccent"
+    app:titleTextColor="@android:color/white">
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white" />
+
+
+    <ImageView
+        android:id="@+id/burger_menu_icon"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="start|center_vertical"
+        android:src="@drawable/burger" />
+
+    <TextView
+        android:id="@+id/edit_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="@string/EDIT"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+</android.support.v7.widget.Toolbar>

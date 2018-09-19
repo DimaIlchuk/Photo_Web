@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Used in fragment_summary.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <stroke android:width="2dip" android:color="#2E9D8D" />
+
+    <stroke
+        android:dashGap="6px"
+        android:dashWidth="6px"
+        android:color="#C7B299" />
+</shape>

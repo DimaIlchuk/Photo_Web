@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_select_pics_activity" />
+
+    <LinearLayout
+        android:id="@+id/llSources"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/all_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:src="@drawable/selection_circle"
+                android:tag="2000"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/selected_pics_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/check_rouge"
+                android:tag="1000" />
+
+            <TextView
+                android:id="@+id/selected_pics_icon_counter"
+                style="@style/PicsSelectedCounter" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/filet_reseaux" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/local_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/selection_circle"
+                        android:tag="2001" />
+
+                    <ImageView
+                        android:id="@+id/local_pics_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/smartphone_cercle"
+                        android:tag="1001" />
+
+                    <TextView
+                        android:id="@+id/local_pics_icon_counter"
+                        style="@style/PicsSourceCounter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/fb_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/selection_circle"
+                        android:tag="2002"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/fb_pics_icon"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/facebook_02"
+                        android:tag="1002" />
+
+                    <TextView
+                        android:id="@+id/fb_pics_icon_counter"
+                        style="@style/PicsSourceCounter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/goo_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/selection_circle"
+                        android:tag="2003"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/goo_pics_icon"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/logo_google_photo"
+                        android:tag="1003" />
+
+                    <TextView
+                        android:id="@+id/goo_pics_icon_counter"
+                        style="@style/PicsSourceCounter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/insta_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/selection_circle"
+                        android:tag="2004"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/insta_pics_icon"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/logo_instagram_cercle"
+                        android:tag="1004" />
+
+                    <TextView
+                        android:id="@+id/insta_pics_icon_counter"
+                        style="@style/PicsSourceCounter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/dp_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/selection_circle"
+                        android:tag="2005"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/dp_pics_icon"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/logo_dropbox_cercle"
+                        android:tag="1005" />
+
+                    <TextView
+                        android:id="@+id/dp_pics_icon_counter"
+                        style="@style/PicsSourceCounter" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_emptyview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="Se connecter" />
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="10dp" />
+
+        <ListView
+            android:id="@+id/albumList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

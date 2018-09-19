@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="LoginTheme" parent="Theme.AppCompat.NoActionBar" />
+
+
+    <style name="PicsSelectedCounter">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:text">120</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/circle_shape_button_count_pics</item>
+
+    </style>
+
+    <style name="PicsSourceCounter">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:text">120</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/circle_shape_button_count_pics</item>
+
+    </style>
+
+    <style name="BasketFragments">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="colorControlActivated">@android:color/black</item>
+    </style>
+
+    <style name="MyAccountTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+    <style name="MyCheckBox2" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">#777777</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">@color/colorAccent</item> <!-- activated color change as you wish -->
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+        <item name="android:textColor">@color/piics_black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Stripe design -->
+    <style name="StripeDefaultTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/validation_green</item>
+        <item name="colorControlNormal">@color/control_normal_color_default</item>
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/secondary_text_light</item>
+    </style>
+
+</resources>
